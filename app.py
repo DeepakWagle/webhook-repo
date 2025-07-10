@@ -3,7 +3,7 @@ from pymongo import MongoClient
 from datetime import datetime, timezone
 
 app = Flask(__name__)
-client = MongoClient("mongodb+srv://deepakwagle060:g6QOtywqz3lkTgUk@webhook-db.ti2po2o.mongodb.net/?retryWrites=true&w=majority&appName=webhook-db")
+client = MongoClient("mongodb+srv://<username>:<password>@webhook-db.ti2po2o.mongodb.net/?retryWrites=true&w=majority&appName=webhook-db")
 db = client["webhookdb"]
 events = db["events"]
 
